@@ -1,14 +1,9 @@
-import logging
 import pathlib
 import os
 import unittest
-from argparse import Namespace
+
 from tempfile import NamedTemporaryFile
-
 from tabpy_server.app.app import TabPyApp
-from tabpy_server.app.ConfigParameters import ConfigParameters
-
-from unittest.mock import patch, call
 
 
 class TestPasswordFile(unittest.TestCase):
