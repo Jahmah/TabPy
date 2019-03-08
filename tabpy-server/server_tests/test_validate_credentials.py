@@ -1,18 +1,10 @@
 import base64
-import hashlib
-import logging
-import pathlib
-import os
 import unittest
-from argparse import Namespace
-from tempfile import NamedTemporaryFile
 
 from tabpy_server.handlers.util import (
     validate_basic_auth_credentials,
     handle_basic_authentication,
     check_and_validate_basic_auth_credentials)
-
-from unittest.mock import patch, call
 
 
 class TestValidateBasicAuthCredentials(unittest.TestCase):
