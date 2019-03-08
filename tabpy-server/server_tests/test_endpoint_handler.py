@@ -2,11 +2,9 @@ import base64
 import hashlib
 import os
 import tempfile
-import unittest
 
 from argparse import Namespace
 from tabpy_server.app.app import TabPyApp
-from tabpy_server.handlers.endpoint_handler import EndpointHandler
 from tornado.testing import AsyncHTTPTestCase
 from unittest.mock import patch
 
